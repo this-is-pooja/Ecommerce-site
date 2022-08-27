@@ -1,0 +1,92 @@
+{
+  "RealState": [
+    {
+      "amount": 20000,
+      "Room": "2 bhk",
+      "area": 509,
+      "address": "Kalher, Bhiwandi, Thane",
+      "House_Img": "https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "Property_type": "House"
+    },
+    {
+      "amount": 100000,
+      "Room": "4 bhk",
+      "area": 2400,
+      "address": "Dehradun,Uttarakhand",
+      "House_Img": "https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "Property_type": "House"
+    },
+    {
+      "amount": 1400000,
+      "area": 2400,
+      "Room": "4 hall",
+      "address": "Uttarakhand",
+      "House_Img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAazzi4xACwvhfc5nnnZw5yDaNmFBSAPg2Ew&usqp=CAU",
+      "Property_type": "Banquet Hall"
+    },
+    {
+      "amount": 640000,
+      "area": 5400,
+      "Room": "6 hall",
+      "address": "Mathura",
+      "House_Img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRs_aTZDQM9rGaBH3wbbpkahAcrYWAZ3ibusw&usqp=CAU",
+      "Property_type": "Banquet Hall"
+    },
+    {
+      "amount": 30000,
+      "Room": "2bhk",
+      "area": 1000,
+      "address": "Haldwani,Nainital",
+      "House_Img": "https://images.pexels.com/photos/2102587/pexels-photo-2102587.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "Property_type": "House"
+    },
+    {
+      "amount": 240000,
+      "Room": "6bhk",
+      "area": 3000,
+      "address": "Dombivli East, Thane",
+      "House_Img": "https://images.pexels.com/photos/280229/pexels-photo-280229.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "Property_type": "House"
+    },
+    {
+      "amount": 80000,
+      "Room": "3bhk",
+      "area": 900,
+      "address": "Bhiwandi, Thane",
+      "House_Img": "https://images.unsplash.com/photo-1598228723793-52759bba239c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTV8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+      "Property_type": "House"
+    },
+    {
+      "amount": 240000,
+      "Room": "4bhk",
+      "area": 1800,
+      "address": "Uttar Pradesh",
+      "House_Img": "https://cdn.pixabay.com/photo/2014/07/10/17/18/large-home-389271__340.jpg",
+      "Property_type": "House"
+    },
+    {
+      "amount": 105000,
+      "Room": "3bhk",
+      "area": 750,
+      "address": "Delhi",
+      "House_Img": "https://images7.alphacoders.com/344/thumbbig-344344.webp",
+      "Property_type": "House"
+    },
+    {
+      "amount": 20000,
+      "Room": "6bhk",
+      "area": 3500,
+      "address": "Kalher, Bhiwandi, Thane",
+      "House_Img": "https://images5.alphacoders.com/341/thumbbig-341715.webp",
+      "Property_type": "House"
+    },
+    {
+      "amount": 350000,
+      "Room": "2bhk",
+      "area": 509,
+      "address": "Kalher, Bhiwandi, Thane",
+      "House_Img": "https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "Property_type": "House"
+    }
+  ]
+}

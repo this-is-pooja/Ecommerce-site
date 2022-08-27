@@ -1,19 +1,19 @@
-import React, { useState } from 'react';
-import Logo from "../assets/logo.png";
-import { ImSortAmountAsc } from "react-icons/im";
-import { BsFilterSquareFill } from "react-icons/bs";
+import React from "react";
+import { BsHeartFill } from "react-icons/bs";
 
 const styles = {
-    height: "8rem",
+  layoutContainer: {
+    height: "5rem",
     backgroundColor: "#fff",
     fontSize: "1.5rem",
     paddingLeft: "1.2rem",
     fontWeight: "500",
     display: "flex",
     justifyContent: "space-between",
-    boxShadow: "rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px"
-}
-const btnStyle = {
+    boxShadow:
+      "rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px",
+  },
+  btnStyle: {
     width: "8rem",
     marginRight: "5rem",
     height: "2.5rem",
@@ -24,112 +24,58 @@ const btnStyle = {
     display: "flex",
     justifyContent: "center",
     fontSize: "1rem",
-    cursor: "pointer"
-}
-const hoverBtnStyle = {
-    width: "8rem",
-    marginRight: "5rem",
-    height: "1.5rem",
-    borderRadius: "4px",
-    backgroundColor: "#fff",
-    color: "#FF5733",
-    border: "1px solid #FF5733",
-    display: "flex",
-    justifyContent: "center",
-    fontSize: "1rem",
-    cursor: "pointer"
-}
-const FilterStyle = {
+    cursor: "pointer",
+  },
+  FilterStyle: {
     marginTop: "0.5rem",
-    marginRight: "4px"
-}
-const FilterOuterBox = {
+    marginRight: "4px",
+  },
+  FilterOuterBox: {
     display: "flex",
     alignItems: "center",
     width: "calc(100vw-600px)",
-    height: "8rem"
-}
-const icon = {
-    marginTop: "0.6rem"
-}
+    height: "5rem",
+  },
+  icon: {
+    marginTop: "0.6rem",
+  },
+  logo: {
+    marginTop: "-5px",
+    cursor: "pointer",
+    width: "140px",
+    height: "85px",
+  },
+};
 
 function Layout(props) {
-    
-    const [Filter, setFilter] = useState(false);
-    props.items.sort((a, b) => a.price - b.price);
+  const showFavouritePage = () => {
+    props.setShowFavourite(true);
+  };
 
-    return (
-        <div style={styles}>
-            <div>
-                <img
-                    src={Logo}
-                    alt=""
-                    width="160px"
-                    height="120px"
-                />
-            </div>
-            <div>
-                <div style={FilterOuterBox}>
-                    <button style={btnStyle}>
-                        <div
-                            style={FilterStyle}
-                            onClick={() => props.onClick()}
-                        >
-                            Sort
-                        </div>
-                        <ImSortAmountAsc style={icon} />
-                    </button>
-                    <div
-                        onMouseEnter={() => {
-                            setFilter(true);
-                        }}
-                        onMouseLeave={() => {
-                            setFilter(false);
-                        }}
-                    >
-                        {
-                            Filter
-                                ?
-                                <>
-                                    <button
-                                        style={hoverBtnStyle}
-                                        onClick={() => props.onChange()}>
-                                        Jwellery's
-                                    </button>
-                                    <div
-                                        style={{ margin: "1rem 0 1rem 0" }}
-                                    >
-                                        <button
-                                            style={hoverBtnStyle}
-                                            onClick={() => props.Men()}
-                                        >
-                                            Men's
-                                        </button>
-                                    </div>
-                                    <button
-                                        style={hoverBtnStyle}
-                                        onClick={() => props.Electronics()}
-                                    >
-                                        Electronics
-                                    </button>
-                                </>
-                                :
-                                <button
-                                    style={btnStyle}
-                                >
-                                    <div
-                                        style={FilterStyle}
-                                    >Filter
-                                    </div>
-                                    <BsFilterSquareFill style={icon} />
-                                </button>
-                        }
-                    </div>
+  const HomePage = () => {
+    props.setShowFavourite(false);
+    window.location.reload(false);
+  };
 
-                </div>
-            </div>
+  return (
+    <div style={styles.layoutContainer}>
+      <div onClick={HomePage}>
+        <img
+          src="https://png.pngtree.com/element_our/sm/20180413/sm_5ad0c0643f2d8.jpg"
+          alt=""
+          style={styles.logo}
+        />
+      </div>
+      <div>
+        <div style={styles.FilterOuterBox}>
+          <button style={styles.btnStyle} onClick={showFavouritePage}>
+            <div style={styles.FilterStyle}>Favourite</div>
+            <BsHeartFill style={styles.icon} />
+          </button>
         </div>
-    )
+      </div>
+    </div>
+  );
 }
 
-export default Layout
+export default Layout;
